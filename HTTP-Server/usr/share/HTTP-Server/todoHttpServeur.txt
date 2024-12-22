@@ -1,0 +1,33 @@
+1. Servir des ressources statiques (Headers)
+Objectif : Ton serveur doit être capable de gérer des requêtes HTTP et de retourner des fichiers statiques (HTML, CSS, JS, images, etc.).
+À vérifier :
+Les headers appropriés sont bien ajoutés dans les réponses HTTP (Content-Type, Content-Length, Connection, etc.).
+Les erreurs courantes comme 404 Not Found (si le fichier n'existe pas) ou 403 Forbidden (si l’accès est interdit) sont bien gérées.
+
+2. Servir des ressources PHP (appel de l’interpréteur PHP externe)
+Objectif : Le serveur doit pouvoir traiter les fichiers PHP en les passant à un interpréteur PHP (externe, via CGI ou FCGI).
+À vérifier :
+La détection des fichiers .php dans les requêtes.
+L’appel correct à l’interpréteur PHP en fournissant les bonnes données (par exemple, le chemin du fichier et les variables CGI comme REQUEST_METHOD).
+La redirection de la sortie de l’interpréteur vers la réponse HTTP.
+
+3. Configuration via un fichier de config
+Objectif : Fournir un fichier de configuration flexible permettant de :
+Spécifier le port sur lequel le serveur écoute.
+Définir le chemin du répertoire des ressources statiques (htdocs).
+Activer ou désactiver la prise en charge de PHP.
+À vérifier :
+Le fichier est facilement lisible (JSON, YAML, ou autre format standard).
+Les paramètres de configuration sont bien pris en compte au démarrage du serveur.
+
+4. Création d’un installateur
+Objectif : Simplifier l’installation et la mise en route du serveur.
+À vérifier :
+L’installateur configure correctement les dépendances nécessaires (PHP, interpréteur, etc.).
+Il installe le serveur sur le système avec une documentation claire pour l’utilisateur.
+
+5. Création d’une interface pour interagir avec le fichier de config
+Objectif : Proposer une interface (CLI ou graphique) pour que l’utilisateur puisse modifier facilement les paramètres de configuration.
+À vérifier :
+L’interface doit être intuitive.
+Les validations doivent être mises en place pour éviter des configurations invalides.

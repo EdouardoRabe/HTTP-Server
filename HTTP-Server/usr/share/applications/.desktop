@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=HTTP Server
+Comment=Un serveur HTTP simple en Java
+Exec=http-server
+Icon=/usr/share/icons/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;

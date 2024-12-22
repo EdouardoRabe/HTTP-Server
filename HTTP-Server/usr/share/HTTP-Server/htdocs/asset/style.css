@@ -1,0 +1,169 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles du menu fixe */
+.menu-fixe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.menu-fixe .logo{
+    color: rgb(252, 178, 190);
+    font-size: 20px;
+}
+
+.menu-fixe .nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu-fixe .nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-fixe .nav ul li a {
+    color: #0e0d0d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+#color_blue {
+    color: blue;
+}
+#color_orange{
+    color:orange;
+}
+#color_rose {
+    color: rgb(252, 178, 190);
+}
+
+#freeQuote{
+    width: 100%;
+    height: 40px;
+    color: rgb(252, 178, 190);
+    border: 1px solid rgb(252, 178, 190); 
+    border-radius: 19px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+.menu-fixe .nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+#home{
+    display:flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+#home h1{
+    color: rgb(252, 178, 190);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 76;
+}
+
+.textcontaint {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+.textcontaint p{
+    padding: 20px;
+    color: #aaa;
+    font-size: 25px;
+    margin-right: 30%;
+}
+.titre{
+    font-size: 70px;
+    padding-right: 20%;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style de la page pour simuler le contenu */
+.section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+.pair{
+    background-color:aliceblue
+}
+
+.section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Styles du footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: table;
+}
+
+.footer-col {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}

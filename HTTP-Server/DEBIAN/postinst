@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Script post-installation pour HTTP-Server
+
+# Fonction pour afficher les erreurs si une commande échoue
+fail() {
+  echo "Erreur: $1"
+  exit 1
+}
+
+# 1. Mettre à jour la base de données des applications
+echo "Mise à jour de la base de données des applications..."
+update-desktop-database || fail "Échec de la mise à jour de la base de données des applications."
+
+# 2. Créer un lien symbolique dans /usr/bin pour l'exécutable
+echo "Création du lien symbolique vers HTTP-Server..."
+sudo ln -sf /usr/bin/HTTP-Server.sh /usr/bin/http-server || fail "Échec de la création du lien symbolique."
+
+# 3. S'assurer que le répertoire logs existe et est accessible
+echo "Vérification du répertoire des logs..."
+mkdir -p /usr/share/HTTP-Server/logs || fail "Échec de la création du répertoire des logs."
+chmod 755 /usr/share/HTTP-Server/logs || fail "Échec de la modification des permissions du répertoire des logs."
+
+# 4. Vérification de l'icône pour le menu des applications
+echo "Vérification de l'icône dans /usr/share/icons..."
+if [ ! -f /usr/share/icons/icon.png ]; then
+  echo "L'icône n'a pas été trouvée, veuillez vérifier son emplacement."
+  exit 1
+fi
+
+# 5. Confirmer l'installation
+echo "Installation terminée avec succès !"
+
+# Fin du script
+exit 0
