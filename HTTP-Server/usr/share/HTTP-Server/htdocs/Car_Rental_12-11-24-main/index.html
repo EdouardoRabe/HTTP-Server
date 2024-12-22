@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styleAd.css" />
+
+    <title>Taxi Be</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">
+              <!-- <img src="assets/img/logo-white.png" alt="logo" class="logo-white" /> -->
+              <img src="assets/img/bus.png" alt="logo" class="logo-dark" />
+              <span>Taxi Be</span>
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#home">Addition</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#deals">Daily information</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn">Register</button>
+        </div>
+      </nav>
+      <div class="header__container" id="home">
+        <div class="header__image">
+          <img src="assets/img/tra.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h2>👍 Faites votre trajet en toute securite. </h2>
+          <h1>BIENVENUE SUR Taxi Be......</h1>
+          <p class="section__description">
+            "Faciliter vos deplacements au quotidien.""
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="header__form">
+      <form action="traitement.php" method="post">
+        <div class="input__group">
+          <label for="location">Pick up & Return location</label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Dallas, Texas"
+          />
+        </div>
+        <div class="input__group">
+          <label for="start">Pick up date</label>
+          <input
+            type="text"
+            name="start"
+            id="start"
+            placeholder="Aug 16, 10:00 AM"
+          />
+        </div>
+        <div class="input__group">
+          <label for="stop">Return date</label>
+          <input
+            type="text"
+            name="stop"
+            id="stop"
+            placeholder="Aug 18, 10:00 PM"
+          />
+        </div>
+        <button class="btn">Add <i class="ri-check-line"></i></button>
+      </form>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <h2 class="section__header">How it work</h2>
+      <p class="section__description">
+        Renting a car with us is simple! Choose your vehicle, pick your dates,
+        and complete your booking. We'll handle the rest, ensuring a smooth
+        start to your journey.
+      </p>
+      <div class="about__grid">
+        <div class="about__card">
+          <span><i class="ri-map-pin-2-fill"></i></span>
+          <h4>Location</h4>
+          <p>
+            Departure from Analankely and terminus at Iaviloha.
+          </p>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-calendar-event-fill"></i></span>
+          <h4>Pick-up Date</h4>
+          <p>
+            7 days a weeks - 3:00 AM until 7:00 PM
+          </p>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-roadster-fill"></i></span>
+          <h4>About Bus</h4>
+          <p>
+            Public transportation. 
+          </p>
+        </div>
+    </div>
+    </section>
+
+    <section class="deals" id="deals">
+      <!-- CONTENT -->
+      <section id="content">
+        <main>
+          <ul class="box-info">
+            <li>
+              <i class='bx bxs-calendar-check' ></i>
+              <span class="text">
+                <h3>1020</h3>
+                <p>New Order</p>
+              </span>
+            </li>
+            <li>
+              <i class='bx bxs-group' ></i>
+              <span class="text">
+                <h3>24</h3>
+                <p>Number of drivers</p>
+              </span>
+            </li>
+            <li>
+              <i class='bx bxs-dollar-circle' ></i>
+              <span class="text">
+                <h3>$543</h3>
+                <p>Total daily income</p>
+              </span>
+            </li>
+          </ul>
+    
+    
+          <div class="table-data">
+            <div class="order">
+              <div class="head">
+                <h3>Recent Orders</h3>
+                <i class='bx bx-search' ></i>
+                <i class='bx bx-filter' ></i>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Driver</th>
+                    <th>Bus</th>
+                    <th>Pick up date & Return date</th>
+                    <th>Location</th>
+                    <th>Kilometers traveled</th>
+                    <th>Fuel amount</th>
+                    <th>Revenue amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="assets/img/people.png">
+                      <p>John Doe</p>
+                      <td>Bus 102</td>
+                      <td>Aug 16, 10:00 AM - Aug 18, 10:00 PM</td>
+                      <td>Dallas, Texas</td>
+                      <td>350 km</td>
+                      <td>45 Liters</td>
+                      <td>$5,200</td>
+                    <td><span class="status completed">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/img/people.png">
+                      <p>John Doe</p>
+                      <td>Bus 102</td>
+                      <td>Aug 16, 10:00 AM - Aug 18, 10:00 PM</td>
+                      <td>Dallas, Texas</td>
+                      <td>350 km</td>
+                      <td>45 Liters</td>
+                      <td>$5,200</td>
+                    <td><span class="status completed">Completed</span></td>
+                  </tr>	
+                  <tr>
+                    <td>
+                      <img src="assets/img/people.png">
+                      <p>John Doe</p>
+                      <td>Bus 102</td>
+                      <td>Aug 16, 10:00 AM - Aug 18, 10:00 PM</td>
+                      <td>Dallas, Texas</td>
+                      <td>350 km</td>
+                      <td>45 Liters</td>
+                      <td>$5,200</td>
+                    <td><span class="status completed">Completed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+        <!-- MAIN -->
+      </section>
+      
+      
+    
+      
+      <section class="subscribe__container">
+      <div class="subscribe__image">
+        <img src="assets/img/subscribe.png" alt="subscribe" />
+      </div>
+      <div class="subscribe__content">
+        <h2 class="section__header">
+          Subscribe for the latest car rental updates
+        </h2>
+        <p class="section__description">
+          Stay in the know! Subscribe to receive the latest car rental deals,
+          exclusive offers, and updates right to your inbox. Don't miss out on
+          special promotions and the newest additions to our fleet.
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Your Email" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What people say about us?</h2>
+      <p class="section__description">
+        Discover why our customers love renting with us! Read real reviews and
+        testimonials to see how we deliver exceptional service.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                I had an amazing experience renting a car from this service. The
+                booking process was quick and easy, and the car was in perfect
+                condition. Highly recommend!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Michael Adams</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Customer support was excellent! They helped me with all my
+                questions, and I felt confident about my booking. I will
+                definitely rent from them again.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Emily Martinez</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Affordable prices and great selection of vehicles! I found
+                exactly what I needed, and the pick-up and drop-off process was
+                seamless. Very happy with my rental.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-4.jpg" alt="client" />
+                <div>
+                  <h4>Jason Lee</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The flexibility of free cancellations made my trip stress-free.
+                I ended up changing my plans, and it was no hassle to adjust my
+                booking. Great service overall!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-5.jpg" alt="client" />
+                <div>
+                  <h4>David Thompson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The car I rented was top-notch, and the driver was very
+                experienced. It made my road trip so much more enjoyable. Will
+                use them again next time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose__container" id="choose">
+      <div class="choose__image">
+        <img src="assets/img/choose.png" alt="choose" />
+      </div>
+      <div class="choose__content">
+        <h2 class="section__header">Why choose us</h2>
+        <p class="section__description">
+          Discover the difference with our car rental service. We offer reliable
+          vehicles, exceptional customer service, and competitive pricing to
+          ensure a seamless rental experience.
+        </p>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-customer-service-line"></i></span>
+            <div>
+              <h4>Customer Support</h4>
+              <p>Our dedicated support team is available to assist you 24/7.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div>
+              <h4>Many Locations</h4>
+              <p>
+                Convenient pick-up and drop-off locations to suit your travel
+                needs.
+              </p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-wallet-line"></i></span>
+            <div>
+              <h4>Best Price</h4>
+              <p>Enjoy competitive rates and great value for every rental.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-user-star-line"></i></span>
+            <div>
+              <h4>Experience Driver</h4>
+              <p>Reliable, professional drivers available upon request.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-verified-badge-line"></i></span>
+            <div>
+              <h4>Verified Brands</h4>
+              <p>Choose from trusted and well-maintained car brands.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-calendar-close-line"></i></span>
+            <div>
+              <h4>Free Cancellations</h4>
+              <p>Flexible bookings with free cancellation options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe__container">
+      <div class="subscribe__image">
+        <img src="assets/img/subscribe.png" alt="subscribe" />
+      </div>
+      <div class="subscribe__content">
+        <h2 class="section__header">
+          Subscribe for the latest car rental updates
+        </h2>
+        <p class="section__description">
+          Stay in the know! Subscribe to receive the latest car rental deals,
+          exclusive offers, and updates right to your inbox. Don't miss out on
+          special promotions and the newest additions to our fleet.
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Your Email" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What people say about us?</h2>
+      <p class="section__description">
+        Discover why our customers love renting with us! Read real reviews and
+        testimonials to see how we deliver exceptional service.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                I had an amazing experience renting a car from this service. The
+                booking process was quick and easy, and the car was in perfect
+                condition. Highly recommend!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Michael Adams</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Customer support was excellent! They helped me with all my
+                questions, and I felt confident about my booking. I will
+                definitely rent from them again.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Emily Martinez</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Affordable prices and great selection of vehicles! I found
+                exactly what I needed, and the pick-up and drop-off process was
+                seamless. Very happy with my rental.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-4.jpg" alt="client" />
+                <div>
+                  <h4>Jason Lee</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The flexibility of free cancellations made my trip stress-free.
+                I ended up changing my plans, and it was no hassle to adjust my
+                booking. Great service overall!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/img/client-5.jpg" alt="client" />
+                <div>
+                  <h4>David Thompson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The car I rented was top-notch, and the driver was very
+                experienced. It made my road trip so much more enjoyable. Will
+                use them again next time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">
+              <img src="assets/img/bus.png" alt="logo" />
+              <span>Car Rental</span>
+            </a>
+          </div>
+          <p>
+            We're here to provide you with the best vehicles and a seamless
+            rental experience. Stay connected for updates, special offers, and
+            more. Drive with confidence!
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Our Services</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#deals">Rental Deals</a></li>
+            <li><a href="#choose">Why Choose Us</a></li>
+            <li><a href="#client">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Vehicle Model</h4>
+          <ul class="footer__links">
+            <li><a href="#">Toyota Corolla</a></li>
+            <li><a href="#">Toyota Noah</a></li>
+            <li><a href="#">Toyota Allion</a></li>
+            <li><a href="#">Toyota Premio</a></li>
+            <li><a href="#">Mistubishi Pajero</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 0987654321
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-fill"></i></span> New Delhi, India
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span> info@carrental
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>

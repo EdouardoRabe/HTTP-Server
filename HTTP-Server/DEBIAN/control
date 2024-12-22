@@ -1,0 +1,9 @@
+Package: http-server
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Edouardo <edouardorabendrazana@gmail.com>, Mitia <mitiaanjaramandresiarisoa@gmail.com>
+Installed-Size: 20100
+Section: web
+Priority: optional
+Description: Un serveur HTTP simple en Java
+ Ce package installe un serveur HTTP écrit en Java, comprenant une interface de contrôle.
