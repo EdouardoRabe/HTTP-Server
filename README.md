@@ -12,7 +12,7 @@ Bienvenue dans HTTP-Server, un serveur HTTP simple écrit en Java, conçu pour �
 
 Si des dépendances manquent, utilisez cette commande pour les installer :
 
-sudo apt-get install -f
+    sudo apt-get install -f
 
 Une fois l'installation terminée, l'application sera prête à être utilisée.
 Utilisation
@@ -20,7 +20,7 @@ Démarrer le serveur
 
 Ouvrez votre terminal et entrez la commande suivante pour lancer l'interface du serveur :
 
-http-server
+    http-server
 
 Une fenêtre s'ouvrira avec plusieurs options :
 
@@ -38,7 +38,7 @@ Désinstallation
 
 Si vous souhaitez désinstaller le serveur, utilisez la commande suivante :
 
-sudo dpkg -r HTTP-Server
+    sudo dpkg -r HTTP-Server
 
 Support
 
