@@ -45,7 +45,7 @@ Si vous souhaitez désinstaller le serveur, utilisez la commande suivante :
 
 Pour toute question ou problème, veuillez contacter :
 
-- **Edouardo** : edouardo@example.com
-- **Autre Mainteneur** : autre@example.com
+- **Edouardo** : edouardorabendrazana@gmail.com
+- **Autre Mainteneur** : mitiaanjaramandresiarisoa@gmail.com
 
 Merci d'utiliser HTTP-Server !
